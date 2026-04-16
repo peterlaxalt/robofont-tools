@@ -1,4 +1,4 @@
-# Robofont (and Drawbot) Tools
+# Studio Laxalt Robofont (and Drawbot) Tools
 
 Various Robofont extensions, tools, and scripts I use for font development and design.
 
