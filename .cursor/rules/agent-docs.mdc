@@ -1,0 +1,20 @@
+---
+description: agent-docs — track multi-step tasks as living context docs
+alwaysApply: true
+---
+
+At the START of any task with more than one step, read and follow the agent-docs
+skill only when every project/work target resolves inside `/Users/manzanita/Repositories/`:
+
+    /Users/manzanita/Repositories/dog-code/docs/agent-docs/dev/agent-docs-skill.md
+
+If any target resolves outside `/Users/manzanita/Repositories/`, including
+`~/personal_code`, do not create or update anything in
+`/Users/manzanita/Repositories/dog-code/docs/agent-docs/`.
+
+Create/update a living context doc under `/Users/manzanita/Repositories/dog-code/docs/agent-docs/` (one doc
+per task, registered in the index, phases + per-phase model tags). These docs live
+in `dog-code`, so the developer commits and pushes them; the agent must not perform
+state-changing Git operations for them. The same restriction applies to
+`craftlog-js-api`. In every other workspace repository, scoped Git operations,
+including commit and push, are allowed when they are a normal part of the requested work.
